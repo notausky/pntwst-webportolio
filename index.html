@@ -10,80 +10,81 @@
 
     <!-- External Style Sheets -->
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Slab:wght@500&family=Zilla+Slab&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <!-- Navbar -->
     <section id="nav">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand px-3" href="#">Website Logo</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav text-uppercase mx-auto"> <!-- Use mx-auto to center align the links -->
-                  <li class="nav-item active">
-                      <a class="nav-link" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#projects">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#tools">Tools</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-              </ul>
+        <a class="navbar-brand px-3" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Letter-a-hexagon-logo.png" width="60" height="40"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <!-- <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a> -->
+            <a class="nav-item nav-link" href="#landing">About Me</a>
+            <a class="nav-item nav-link" href="#projects">Projects</a>
+            <a class="nav-item nav-link" href="#tools">Tech Stack</a>
+            <a class="nav-item nav-link" href="#contact">Contact Me</a>
           </div>
+        </div>
       </nav>
   </section>
   
 
     <!-- About Section -->
-    <section id="landing" class="bg-secondary container-fluid">
-      <div id="landing-content" class="row" >
-        <div class="col-md-8" id="container">
-          <h5>Hi there! I'm</h5>  
-          <h1>Austin</h1>
-          <p class="text-uppercase">Desingner | Developer</p>
-          <p>I'm a Front-End Developer based in the Philippines.</p>
+    <section id="landing" class="container-fluid">
+
+      <div id="landing-content" class="row p-5">
+
+        <div class="col-md-8" id="container"> 
+          <h1 id="header">Austin Kyle Allag</h1>
+          <div id="landing-text">
+            <p class="text-uppercase">Full Stack Web Developer | Computer Engineer</p>
+            <p>Currently a Software Engineer Trainee based in the Philippines.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="./images/allag.png" alt="My Image" class="rounded-circle img-fluid">
+    
+        <div class="col-md-4 ">
+          <img src="./images/allag.png" alt="My Image" class="rounded-circle img-fluid p-2" id="img">
         </div >
+
       </div>
+
     </section>
 
     <!-- About 2 -->
 
     <!-- Projects Section -->
-    <section id="projects" class="bg-primary container-fluid">
+    <section id="projects" class="py-5">
       <div id="projects-content" class="text-center">
-        <h1>My Projects</h1>
-        <div class="card-deck row mt-3 mx-3 gap-3 justify-content-around ">
+        <h1 class="py-5">My Projects</h1>
+        <div class="card-deck row mt-3 mx-3 justify-content-around ">
           <div class="card col-md-3">
             <div class="card-body">
               <h4 class="card-title">Dried Fish Classification System</h4>
               <img src="./images/GUI-THESIS.png" alt="Card image" class="img-fluid">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This application was used on study on dried fish classification
+                using the YOLOv5 on the NVIDIA Jetson Nano.</p>
             </div>
           </div>
           <div class="card col-md-3">
             <div class="card-body">
               <h4 class="card-title">KPOP Underground</h4>
               <img src="./images/kpopundrgrnd_logo2.png" alt="Card image" class="img-fluid">
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">This is a sample KPOP Merchandise Store website using HTML, CSS and JavaScript as Frontend and C# .NET with Microsoft SQL Server as Backend.</p>
             </div>
           </div>
           <div class="card col-md-3">
             <div class="card-body">
               <h4 class="card-title">Tri-X Setup QR Code Inventory Scanner</h4>
               <img src="./images/GUI-OJT.PNG" alt="Card image" class="img-fluid">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">The project is assigned to handle the inventory of Tri-X Setups
+                Equipment of the School of EECE of Mapua University.</p>
             </div>
           </div>
         </div>
@@ -91,43 +92,43 @@
     </section>
 
     <!-- Tools Section -->
-    <section id="tools" class="bg-white container-fluid">
+    <section id="tools" class="container-fluid py-5">
       <div class="text-center">
-        <h1>Tech Stack</h1>
+        <h1 class="py-5">Tech Stack</h1>
       </div>
         <section id="tools" class="container-fluid">
           <div id="tools-content" class="text-center">
               <div class="row mt-4">
                   <div class="col-md-6 col-lg-4 mb-4">
-                      <img src="./images/frontend.png" alt="Tool 1" class="img-fluid">
+                    <h3>Frontend</h3>
+                    <img src="./images/frontend.png" alt="Tool 1" class="img-fluid">
                   </div>
                   <div class="col-md-6 col-lg-4 mb-4">
-                      <img src="./images/backend.png" alt="Tool 2" class="img-fluid">
+                    <h3>Backend</h3>
+                    <img src="./images/backend.png" alt="Tool 2" class="img-fluid">
                   </div>
                   <div class="col-md-6 col-lg-4 mb-4">
-                      <img src="./images/others.png" alt="Tool 3" class="img-fluid">
+                    <h3>Others</h3>
+                    <img src="./images/others.png" alt="Tool 3" class="img-fluid">
                   </div>
               </div>
           </div>
+        </section> 
       </section>
-      
-    </section>
-    
       </div>
-
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-secondary container-fluid">
+    <section id="contact" class="container-fluid pt-5">
       <div class="text-center">
-        <h1>Send me a message!</h1>
+        <h1 class="pt-5">Send me a message!</h1>
         <p>
           Got a question or proposal, or just want to say hello? Go ahead.
         </p>
       </div>
 
       <div class="d-flex justify-content-center">
-        <form class="bg-dark text-light p-4 rounded">
+        <form class="text-light p-4 rounded" id="form">
           <div class="form-group p-3">
             <label for="formGroupInput">Your Name</label>
             <input type="text" class="form-control" id="formGroupInput" placeholder="Enter your name" required>
@@ -141,12 +142,19 @@
             <textarea class="form-control" id="formGroupInput3" placeholder="Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?" rows="7"></textarea>
           </div>
           <div class="justify-content-center text-center">
-            <button type="submit" class="btn btn-primary">Shoot</button>
+            <button type="submit" class="btn btn-primary" id="button">Shoot</button>
           </div>
         </form>
       </div>
-      
     </section>
+
+    <footer class="d-flex justify-content-center d-grid gap-3 mt-5">
+      <div>AA</div>
+      <div>|</div>
+      <div>Terms of Use</div>
+      <div>|</div>
+      <div>Copyright 2023</div>
+  </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

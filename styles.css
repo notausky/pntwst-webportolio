@@ -5,30 +5,85 @@
     box-sizing: border-box;
 }
 
-#container {
-    text-align: right;
-    width: 40%;
-    float: right;
-    padding-left: 100px;
-    padding-top: 200px;
-}
-
 #nav {
-    position: sticky;
     top: 0;
-    z-index: 1000;
-    background-color: #fff; /* Set your desired background color */
+    position: sticky;
+    background-color: #000; /* Set your desired background color */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
   }
 
-/* .carousel-image {
-    max-height: 400px; 
-    max-width: 400px;
-    width: auto; 
-    opacity: 1; 
-    transition: opacity 0.3s ease;
-} */
+#container {
+    text-align: right;
+    
+    float: right;
+    /* padding-left: 100px; */
+    padding-top: 150px;
+}
 
-/* .carousel-image:hover {
-    opacity: 1; 
-} */
+#img {
+    background-color: #CCF381;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+#header{
+    color: #CCF381;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+#landing-text{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#landing{
+    background-image: url("./images/bg/bg-section.png");
+    background-size: cover; /* Adjust to your needs */
+    background-position: center center; /* Adjust to your needs */
+    background-repeat: no-repeat;
+}
+
+#projects{
+    color: #4831D4;
+}
+
+.card{
+    border: 3px solid #CCF381;
+}
+
+#tools{
+    background-color: #4831D4;
+    color: #CCF381;
+}
+
+#tools div{
+    font-size: 2rem;
+}
+
+#contact div{
+    color: #4831D4;
+
+}
+#form{
+    background-color: #CCF381;
+    border-color: #4831D4;
+    width: 600px;
+}
+
+#form label{
+    font-weight: bold;
+    color: #4831D4;
+}
+
+#button{
+    background-color: #4831D4;
+}
+
+footer{
+    background-color: #4831D4 ;
+    color: #CCF381;
+}
